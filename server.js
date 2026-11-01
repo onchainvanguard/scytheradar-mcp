@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // ScytheRadar MCP Server —— 给 AI Agent 的链上风险检测工具箱（只读）
 // 3 个 tool：screen_address / check_blacklist / trace_funds
 // 薄封装 scytheradar.com /api/v1/* 判定 API，不持有私钥、不执行任何交易。
@@ -7,7 +8,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import { apiGet, apiGetWithFallback, ApiError, hasKey, looksValidAddress } from "./lib/client.js";
 
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 
 const server = new McpServer({
   name: "scytheradar-mcp",

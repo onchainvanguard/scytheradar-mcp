@@ -1,6 +1,6 @@
 {
   "name": "scytheradar-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ScytheRadar MCP — read-only, bilingual (中文/English) on-chain risk screening, blacklist check, fund tracing and rug-pull forensics for AI agents. TRON dirty-USDT + EVM.",
   "type": "module",
   "bin": {
