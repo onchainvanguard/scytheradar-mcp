@@ -1,8 +1,17 @@
 # ScytheRadar MCP
 
-On-chain risk intelligence for AI agents — **read-only**. Lets Claude, Cursor, and other MCP clients screen wallet addresses, check blacklists, and trace fund flows directly.
+On-chain risk intelligence for AI agents — **read-only**, **bilingual (中文/English)**, and built for the Chinese-speaking agent ecosystem first. Screen wallets, check blacklists, and trace fund flows, with rug-pull forensics no other crypto MCP ships.
 
 **Read-only by design.** No private keys, no signing, no transaction execution. The worst case is a wrong answer; your funds are never at risk.
+
+## Why ScytheRadar (vs the 15+ crypto-AML MCPs)
+
+| We win where they don't | The gap we fill |
+|---|---|
+| 🀄 Chinese agent ecosystem first | First mover for Coze / Dify / Chinese Claude & Cursor users — bilingual tool descriptions and docs. Every competitor is English-only. |
+| 🪦 Rug-pull forensics (death files) | 87+ rug-pull case files with autopsy reports, timelines, and scam-contract code breakdowns — not just a score, a case file. |
+| 💧 TRON 脏U (dirty-USDT) focus | Tether's official freeze list (9,000+ addresses) + OFAC multi-chain sanctions — built for Asia's P2P/OTC "should I accept this USDT" reality. |
+| 💰 Cheap, read-only, keyless trial | 6 free calls/day, no signup; paid plans from a few USDT. Built for retail users and small merchants, not banks. |
 
 ## Tools
 
@@ -11,6 +20,10 @@ On-chain risk intelligence for AI agents — **read-only**. Lets Claude, Cursor,
 | `screen_address` | Risk-screen a wallet address (0-100 score / level / verdict / risk flags) |
 | `check_blacklist` | Blacklist hit check (Tether freezes / OFAC sanctions / phishing) |
 | `trace_funds` | Fund tracing (flow / hops / aggregation / suspected laundering path) |
+
+## Language
+
+Tool descriptions are bilingual (中文 / English), so Chinese-language agents (Coze, Dify, 文心, Kimi) call the right tool just as reliably as English ones. 工具描述中英双语，中文 agent 同样能精准调用。
 
 ## Quick start
 
@@ -57,7 +70,7 @@ npx -y scytheradar-mcp
 ## Coverage
 
 - Chains: BSC / Ethereum / Base / Arbitrum / TRON (blacklist also covers BTC / LTC / ZEC / XMR / Solana)
-- Data: 9,000+ Tether freeze addresses · 495 OFAC sanctions (multi-chain) · phishing database · death files (rug-pull forensics)
+- Data: 9,000+ Tether freeze addresses · 495 OFAC sanctions (multi-chain) · phishing database · 87+ rug-pull death files (autopsy + timeline)
 
 ## Disclaimer
 
