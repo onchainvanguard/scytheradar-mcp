@@ -1,0 +1,36 @@
+{
+  "name": "scytheradar-mcp",
+  "version": "0.1.0",
+  "description": "ScytheRadar MCP — on-chain risk screening, blacklist check and fund tracing for AI agents. Read-only. TRON + EVM.",
+  "type": "module",
+  "bin": {
+    "scytheradar-mcp": "server.js"
+  },
+  "main": "server.js",
+  "files": [
+    "server.js",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "crypto",
+    "on-chain",
+    "risk",
+    "aml",
+    "kyt",
+    "tron",
+    "evm"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  }
+}
