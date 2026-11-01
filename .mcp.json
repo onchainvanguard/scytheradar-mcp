@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "scytheradar-mcp": {
+      "command": "npx",
+      "args": ["-y", "scytheradar-mcp"],
+      "env": {
+        "SCYTHERADAR_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
