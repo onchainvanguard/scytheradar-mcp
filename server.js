@@ -8,7 +8,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import { apiGet, apiGetWithFallback, ApiError, hasKey, looksValidAddress } from "./lib/client.js";
 
-const VERSION = "0.1.1";
+const VERSION = "0.1.2";
 
 const server = new McpServer({
   name: "scytheradar-mcp",

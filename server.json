@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.onchainvanguard/scytheradar-mcp",
+  "description": "Read-only bilingual screening, blacklist, fund tracing, rug-pull forensics. TRON dirty-USDT + EVM.",
+  "repository": {
+    "url": "https://github.com/onchainvanguard/scytheradar-mcp",
+    "source": "github",
+    "id": "1442095987"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "scytheradar-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SCYTHERADAR_API_KEY",
+          "description": "Paid API key for blacklist check, fund tracing and full screening. Get one free at https://scytheradar.com/b2b",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true
+        },
+        {
+          "name": "SCYTHERADAR_BASE",
+          "description": "API base URL (default https://scytheradar.com)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

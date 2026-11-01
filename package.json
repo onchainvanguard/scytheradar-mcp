@@ -1,6 +1,7 @@
 {
   "name": "scytheradar-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "mcpName": "io.github.onchainvanguard/scytheradar-mcp",
   "description": "ScytheRadar MCP — read-only, bilingual (中文/English) on-chain risk screening, blacklist check, fund tracing and rug-pull forensics for AI agents. TRON dirty-USDT + EVM.",
   "type": "module",
   "bin": {
