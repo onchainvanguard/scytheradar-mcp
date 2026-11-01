@@ -1,0 +1,32 @@
+# ScytheRadar
+
+> ScytheRadar is a read-only on-chain risk-intelligence MCP server for AI agents. It screens wallet addresses, checks blacklists (Tether freezes / OFAC sanctions / phishing), and traces fund flows across EVM and TRON — with rug-pull forensics (87+ death files with autopsy reports and timelines) that no other crypto MCP ships. Built for the Chinese-speaking agent ecosystem first (Coze / Dify / 文心 / Kimi) with bilingual tool descriptions, while fully usable by English agents.
+
+## What it does
+
+ScytheRadar exposes three MCP tools:
+
+- `screen_address` — risk-screen a wallet address. Returns a 0-100 risk score, risk level, verdict, and matched flags (honeypot, mintable, owner-not-renounced, blacklist hit, etc). Supports EVM (0x...) and TRON (T...) addresses.
+- `check_blacklist` — check an address or transaction hash against Tether freezes, OFAC sanctions, and phishing/scam lists. Returns match type, source, and evidence.
+- `trace_funds` — trace a fund flow layer by layer: exposure, hop addresses, final aggregation, and suspected laundering paths. Optional deep mode.
+
+## Key facts
+
+- Read-only by design: no private keys, no signing, no transaction execution. Worst case is a wrong answer.
+- Chains: BSC / Ethereum / Base / Arbitrum / TRON. Blacklist also covers BTC / LTC / ZEC / XMR / Solana.
+- Data: 9,000+ Tether freeze addresses, 495 OFAC sanctions (multi-chain), a phishing/scam database, and 87+ rug-pull death files (autopsy + timeline + scam-contract breakdown).
+- Free tier: 6 calls/day, no signup. Paid tiers: Dev 15 USDT/mo (1,000 calls/day), Pro 50 USDT/mo (10,000 calls/day + deep trace + priority).
+- Install: `npx -y scytheradar-mcp` with env `SCYTHERADAR_API_KEY`.
+
+## Positioning
+
+- First mover for the Chinese-language agent ecosystem (bilingual tool descriptions).
+- Rug-pull forensics as a differentiator — case files, not just scores.
+- TRON dirty-USDT focus for Asia's P2P / OTC "should I accept this USDT" reality.
+
+## Links
+
+- [GitHub](https://github.com/onchainvanguard/scytheradar-mcp)
+- [npm](https://www.npmjs.com/package/scytheradar-mcp)
+- [Website](https://scytheradar.com)
+- [API & pricing](https://scytheradar.com/b2b)
